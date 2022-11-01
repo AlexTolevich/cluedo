@@ -23,6 +23,18 @@ module.exports = {
                     },
                 ],
             },
+            {
+                test: /\.(png|jpg|gif)$/i,
+                use: [
+                    {
+                        loader: 'url-loader'
+                    },
+                ],
+            },
+            {
+                test: /\.(woff|woff2)$/,
+                type: 'asset/resource',
+            },
         ],
     },
     resolve: {
